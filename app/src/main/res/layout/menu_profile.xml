@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:background="?attr/colorPrimaryDark"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_header_pic"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center"
+                android:src="@drawable/thumb" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/navi_header_image_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="-50dp"
+                android:src="@drawable/camera_memu" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/menu_tabs"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                app:tabMode="fixed"
+                app:tabIndicatorHeight="0dp"
+                app:tabPaddingBottom="0dp"
+                app:tabPaddingEnd="0dp"
+                app:tabPaddingStart="0dp"
+                app:tabPaddingTop="0dp"
+                app:tabGravity="fill"
+                app:elevation="0dp"
+                android:background="#ffffff"
+                app:tabIndicatorColor="@android:color/white"
+                >
+            </android.support.design.widget.TabLayout>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/person_menu_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                />
+
+        </RelativeLayout>
+        <!-- 플로팅 액션버튼  넣어야함-->
+    </LinearLayout>
+
+
+
+

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pick">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:name=".PickApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Splash.SpalshLayout"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Splash.SplashJoin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Splash.SplashJoinBand"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Splash.SplashJoinIndividual"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChatroomActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WriteBandActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WriteIndividualActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".MessageListActivity" />
+        <activity android:name=".ConcertInformActivity" />
+        <activity android:name=".RequestResumeActivity" />
+        <activity android:name=".ConcertDetailActivity" />
+        <activity android:name=".MenuMineActivity" />
+        <activity android:name=".UploadBandWritteActivity" />
+        <activity android:name=".UploadPersonaWritteActivity" />
+        <activity android:name=".CustomerItemDetailActivity" />
+        <activity android:name=".RequestListActivity" />
+        <activity android:name=".BookMarkListActivity" />
+
+        <service
+            android:name=".YouTubeUploadService"
+            android:exported="false"></service>
+    </application>
+
+</manifest>

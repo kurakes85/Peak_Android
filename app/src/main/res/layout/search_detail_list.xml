@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:fillViewport="true" >
+    <!-- 검색 바 -->
+    <LinearLayout
+        android:id="@+id/SearchBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5px"
+        android:background="#270089"
+        android:layout_alignParentTop="true">
+
+        <ImageButton
+            android:id="@+id/search_image_back_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="left|center_vertical"
+            android:src="@drawable/back"
+            android:background="#270089"
+            />
+
+        <EditText
+            android:id="@+id/search_bar_edit_text"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:background="@drawable/searchbox"
+            android:singleLine="true"/>
+
+        <ImageButton
+            android:id="@+id/search_search_btn"
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:layout_gravity="right|center_vertical"
+            android:scaleType="centerCrop"
+            android:background="#270089"
+            android:src="@drawable/pk_search"
+            />
+
+
+
+    </LinearLayout>
+
+    <!-- 목록 -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFFFFF"
+        android:layout_weight="1"
+        android:layout_below="@+id/SearchBarLayout"
+        android:visibility="visible">
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:drawSelectorOnTop="false"
+            />
+        <TextView
+            android:id="@android:id/empty"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal|top"
+            android:textSize="20sp"
+            android:text="No Data"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvHeaderTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:background="#8696A5"
+        android:paddingLeft="5dp"
+        android:gravity="left"
+        android:layout_below="@+id/SearchBarLayout" />
+</RelativeLayout>

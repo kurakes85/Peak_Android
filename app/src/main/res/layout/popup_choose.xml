@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="242dp"
+    android:layout_height="149dp"
+    android:layout_marginLeft="59dp"
+    android:layout_marginRight="59dp"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/profile_bg"
+    >
+
+    <LinearLayout
+        android:layout_marginLeft="55dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="23dp"
+        >
+            <ImageView
+                android:id="@+id/band_title_popup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/band_string"
+                />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="9dp"
+        android:layout_marginLeft="55dp"
+        >
+
+        <Button
+            android:id="@+id/pop_choose_no"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/profile_no"
+            />
+
+        <Button
+            android:id="@+id/pop_choose_yes"
+            android:layout_marginLeft="36dp"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/profile_yes"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+    </LinearLayout>
+
+

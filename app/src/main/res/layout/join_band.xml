@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:rsv="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/join_background">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/edge"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="63dp"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="50dp">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/bandNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="밴드명"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/bandNameEdit"
+                android:hint="ex)기묭철밴드"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:textSize="15dp"
+                android:textIsSelectable="false"
+                android:maxLength="20"
+                android:textColor="#fff"
+                android:singleLine="true"
+                />
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/sexTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="팀구성"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/bandTeamText"
+                android:hint="ex)기타1,드럼1,보컬1"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:textSize="15dp"
+                android:maxLength="30"
+                android:textColor="#fff"
+                android:singleLine="true"
+                />
+
+        </LinearLayout>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:gravity="clip_vertical"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp" >
+
+            <TextView
+                android:id="@+id/ageTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="연령대 "
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textColor="#fff" />
+
+            <SeekBar
+                android:layout_gravity="center"
+                android:id="@+id/join_seek_bar_band"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:progress="0"
+                android:max="100"
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/genreTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="31dp"
+                android:text="장르"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:textColor="#fff" />
+
+            <Spinner
+                android:id="@+id/genreSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:entries="@array/sp_genre"
+                android:layout_marginRight="3dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/cityTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="지역"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:textColor="#fff" />
+
+            <Spinner
+                android:id="@+id/citySpinner"
+                android:layout_gravity="center"
+                android:entries="@array/city"
+                android:layout_width="100dp"
+                android:layout_height="31dp" />
+
+            <Spinner
+                android:id="@+id/DoSpinner"
+                android:entries="@array/dae_jeon_gu"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/genreSpinner"
+                android:layout_toEndOf="@+id/citySpinner"
+                android:layout_toRightOf="@+id/citySpinner"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:gravity="clip_vertical"
+            android:orientation="horizontal"
+            android:layout_marginBottom="30dp">
+
+            <TextView
+                android:id="@+id/partTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="모집파트"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:textColor="#fff" />
+
+            <Spinner
+                android:id="@+id/partSpinner"
+                android:layout_gravity="center"
+                android:entries="@array/candidate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bandInserJoinBtn"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="가입"
+            android:background="#00ff0000"
+            android:layout_gravity="right" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

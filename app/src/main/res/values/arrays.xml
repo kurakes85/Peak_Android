@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 장르 스피너 -->
+    <string-array name="sp_genre">
+        <item>ALL</item>
+        <item>락</item>
+        <item>가요</item>
+        <item>팝</item>
+        <item>인디</item>
+        <item>클래식</item>
+        <item>재즈</item>
+    </string-array>
+
+    <!-- 지원자 스피너 -->
+    <string-array name="candidate">
+        <item>보컬</item>
+        <item>기타</item>
+        <item>베이스</item>
+        <item>드럼</item>
+        <item>신디</item>
+        <item>그외</item>
+    </string-array>
+
+    <!-- 도시 스피너 -->
+    <string-array name="city">
+        <item>서울</item>
+        <item>인천</item>
+        <item>대전</item>
+        <item>광주</item>
+        <item>울산</item>
+        <item>대구</item>
+        <item>부산</item>
+        <item>제주</item>
+        <item>그 외</item>
+    </string-array>
+
+    <!-- 구 스피너 -->
+    <string-array name="seoul_gu">
+        <item>강남구</item>
+        <item>강동구</item>
+        <item>강북구</item>
+        <item>강서구</item>
+        <item>관악구</item>
+        <item>광진구</item>
+        <item>구로구</item>
+        <item>금천구</item>
+        <item>노원구</item>
+        <item>도봉구</item>
+        <item>동대문</item>
+        <item>동작구</item>
+        <item>마포구</item>
+        <item>서대문구</item>
+        <item>서초구</item>
+        <item>성동구</item>
+        <item>성북구</item>
+        <item>송파구</item>
+        <item>양천구</item>
+        <item>영등포구</item>
+        <item>용산구</item>
+        <item>은평구</item>
+        <item>종로구</item>
+        <item>중구</item>
+        <item>중랑구</item>
+    </string-array>
+
+    <!-- 대전 -->
+    <string-array name="dae_jeon_gu">
+        <item>동구</item>
+        <item>중구</item>
+        <item>서구</item>
+        <item>유성구</item>
+        <item>신탄진</item>
+    </string-array>
+
+    <!-- 울산 -->
+    <string-array name="ul_san_gu">
+        <item>남구</item>
+        <item>동구</item>
+        <item>북구</item>
+        <item>중구</item>
+    </string-array>
+
+    <!-- 부산 -->
+    <string-array name="bu_san_gu">
+        <item>강서구</item>
+        <item>금정구</item>
+        <item>남구</item>
+        <item>동구</item>
+        <item>동래구</item>
+        <item>부산진구</item>
+        <item>북구</item>
+        <item>사상구</item>
+        <item>사하구</item>
+        <item>서구</item>
+        <item>수영구</item>
+        <item>연제구</item>
+        <item>영도구</item>
+        <item>중구</item>
+        <item>해운대구</item>
+    </string-array>
+
+    <string-array name="gwang_ju_gu">
+        <item>광산구</item>
+        <item>남구</item>
+        <item>동구</item>
+        <item>북구</item>
+        <item>서구</item>
+    </string-array>
+
+    <string-array name="in_cheon_gu">
+        <item>동구</item>
+        <item>서구</item>
+        <item>중구</item>
+        <item>남구</item>
+        <item>연수구</item>
+        <item>계양구</item>
+        <item>부평구</item>
+        <item>남동구</item>
+    </string-array>
+
+    <string-array name="je_ju_gu">
+        <item>서귀포</item>
+        <item>제주</item>
+    </string-array>
+
+    <string-array name="dae_gu_gu">
+        <item>중구</item>
+        <item>동구</item>
+        <item>서구</item>
+        <item>남구</item>
+        <item>북구</item>
+        <item>수성구</item>
+        <item>달서구</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- actionBar 컬러 들어가는 부분,-->
+    <color name="appColor">#270089</color>
+    <color name="whiteColor">#ffffff</color>
+    <color name="PrimaryColor">#270089</color>
+</resources>
