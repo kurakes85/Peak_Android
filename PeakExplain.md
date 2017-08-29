@@ -15,11 +15,6 @@
 1. 스플래시
 </br>
 
-
-<div float:left;>
-<img src="/peak/화면 디자인/3.구인/구인화면.png" width="300px" height="500px"/> 
-</div>
-
 <div float:left;>
 <img src="/peak/화면 디자인/3.구인/구인화면리스트.png" width="300px" height="500px"/> 
 </div>
