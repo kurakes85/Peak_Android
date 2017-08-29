@@ -8,7 +8,6 @@
 <div float:left;>
 <img src="/peak/화면 디자인/1.스플레시/splash.png" width="300px" height="500px" />
 </div>
-
 <div margin:10%;float:left;>
 <img src="/peak/화면 디자인/2.회원가입/회원가입.png" width="300px" height="500px" />
 </div>
