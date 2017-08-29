@@ -12,13 +12,14 @@
 <img src="/peak/화면 디자인/2.회원가입/회원가입.png" width="300px" height="500px" />
 </div>
 </br>
-1. 스플래시
+1. 스플래시 화면 
 </br>
 
 <div float:left;>
 <img src="/peak/화면 디자인/3.구인/구인화면리스트.png" width="300px" height="500px"/> 
 </div>
 </br>
+
 <div>
 2. 구인화면, CardView 와 RecycerView 외 Youtube API TumbNail And Auth
 </div>
@@ -27,19 +28,22 @@
 <div float:left>
  <img src="peak/화면 디자인/6.글작성/구인글작성.png" width="300px" height="500px" />  
 </div>
+</br>
 
-
-<div float:left>
+<div>
  <img src="peak/화면 디자인/7.마이메뉴/나의글.png" width="300px" height="500px" />  
 </div>
+</br>
 
 <div float:left>
  <img src="peak/화면 디자인/9.신청리스트/신청리스트(나를).png" width="300px" height="500px" />  
 </div>
+</br>
 
 <div float:left>
  <img src="peak/화면 디자인/9.신청리스트/신청리스트(내가).png" width="300px" height="500px" />  
 </div>
+</br>
 
 
 <div>
