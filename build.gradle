@@ -2,21 +2,21 @@
 
 buildscript {
     repositories {
-        jcenter()
+        google()
+        mavenCentral()
+        jcenter()   // 있어도 되고, 나중에 지워도 됨
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.3'
-
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
+        classpath 'com.android.tools.build:gradle:7.4.2'
     }
 }
 
 allprojects {
     repositories {
+        google()
+        mavenCentral()
         jcenter()
     }
-
 }
 
 task clean(type: Delete) {
